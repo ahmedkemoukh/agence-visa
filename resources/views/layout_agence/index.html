@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+          <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+
+
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-light">
+      <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+          <h4 class="m-0">agence</h4>
+          <p class="font-weight-light text-muted mb-0">agence de voyage</p>
+        </div>
+      </div>
+    </div>
+  
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+  
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic bg-light">
+                  <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                  List agence
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                  Liste des distinations
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                  liste evisa
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                  listes des promotions
+              </a>
+      </li>
+    </ul>
+  
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+  
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                  mes demandes
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                  tableau de bord
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+                  recherche par dossier
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic">
+                  <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+                  Line charts
+              </a>
+      </li>
+    </ul>
+  </div>
+  <!-- End vertical navbar -->
+  
+  
+  <!-- Page content holder -->
+  <div class="page-content p-3" id="content">
+    <!-- Toggle button -->
+    <div class="headimage "></div>
+    
+    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-0"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+    <!-- MultiStep Form -->
+<div class="container-fluid" id="grad1">
+    <div class="row justify-content-center mt-0">
+        <div class="col-12 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <h2><strong>Sign Up Your User Account</strong></h2>
+                <p>Fill all form field to go to next step</p>
+                <div class="row">
+                    <div class="col-md-12 mx-0">
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active" id="account"><strong>Account</strong></li>
+                                <li id="personal"><strong>Personal</strong></li>
+                                <li id="payment"><strong>Payment</strong></li>
+                                <li id="confirm"><strong>Finish</strong></li>
+                            </ul> <!-- fieldsets -->
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="d-flex justify-content-center">
+                                    <h2 class="fs-title">tarif de visa</h2> </div>
+                                    <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress">Email</label>
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="1234 Main St">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputAddress">Pays de distination</label>
+                                        <input type="text" class="form-control" id="inputPays" placeholder="1234 Main St">
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputAddress">type de visa</label>
+                                            <input type="text" class="form-control" id="inputVisa" placeholder="1234 Main St">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                            <label for="inputAddress">Date d'arrivéé</label>
+                                            <input type="text" class="form-control" id="inputArrive" placeholder="1234 Main St">
+                                          </div>
+                                        </div>
+                                </div> <input type="button" name="next" class="next action-button" value="Next Step" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">ajouetr vayougeur</h2> 
+                                    <div class="form-group">
+                                        <label for="inputAddress">voyageur exist</label>
+                                        <input type="text" class="form-control" id="inputVisa" placeholder="1234 Main St">
+                                      </div>
+                                      <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputAddress">Nom</label>
+                                            <input type="text" class="form-control" id="inputNom" placeholder="1234 Main St">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                            <label for="inputAddress">Prénome</label>
+                                            <input type="text" class="form-control" id="inputprenom" placeholder="1234 Main St">
+                                          </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputAddress">Date de naissance</label>
+                                                <input type="text" class="form-control" id="inputnaissance" placeholder="1234 Main St">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                <label for="inputAddress">Lieu de naissance</label>
+                                                <input type="text" class="form-control" id="inputArrive" placeholder="1234 Main St">
+                                              </div>
+                                            </div>
+
+                                            <div class="form-group ">
+                                                <label for="inputAddress">Documents de voyage</label>
+                                                <input type="text" class="form-control" id="inputnaissance" placeholder="1234 Main St">
+                                              </div>
+                                              <div class="form-group ">
+                                                <label for="inputAddress">Némero de passeport</label>
+                                                <input type="text" class="form-control" id="inputnaissance" placeholder="1234 Main St">
+                                              </div>
+
+                                              <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputAddress">Date de délivrance</label>
+                                                    <input type="text" class="form-control" id="inputnaissance" placeholder="1234 Main St">
+                                                  </div>
+                                                  <div class="form-group col-md-6">
+                                                    <label for="inputAddress">Date de d'expiration</label>
+                                                    <input type="text" class="form-control" id="inputArrive" placeholder="1234 Main St">
+                                                  </div>
+                                            
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label for="inputAddress">Address</label>
+                                                    <input type="text" class="form-control" id="inputnaissance" placeholder="1234 Main St">
+                                                  </div>
+
+                                                  <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputAddress">Email de voyageur</label>
+                                                        <input type="text" class="form-control" id="inputnaissance" placeholder="1234 Main St">
+                                                      </div>
+                                                      <div class="form-group col-md-6">
+                                                        <label for="inputAddress">Mobile de voyageur</label>
+                                                        <input type="text" class="form-control" id="inputArrive" placeholder="1234 Main St">
+                                                      </div>
+                                                
+                                                    </div>
+                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">Payment Information</h2>
+                                    <div class="radio-group">
+                                        <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px"></div>
+                                        <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px"></div> <br>
+                                    </div> <label class="pay">Card Holder Name*</label> <input type="text" name="holdername" placeholder="" />
+                                    <div class="row">
+                                        <div class="col-9"> <label class="pay">Card Number*</label> <input type="text" name="cardno" placeholder="" /> </div>
+                                        <div class="col-3"> <label class="pay">CVC*</label> <input type="password" name="cvcpwd" placeholder="***" /> </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3"> <label class="pay">Expiry Date*</label> </div>
+                                        <div class="col-9"> <select class="list-dt" id="month" name="expmonth">
+                                                <option selected>Month</option>
+                                                <option>January</option>
+                                                <option>February</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>August</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select> <select class="list-dt" id="year" name="expyear">
+                                                <option selected>Year</option>
+                                            </select> </div>
+                                    </div>
+                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="make_payment" class="next action-button" value="Confirm" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                                    </div> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                            <h5>You Have Successfully Signed Up</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+    
+  </div>
+
+  
+    <!-- MultiStep Form -->
+
+  <!-- End demo content -->
+<script src="js/main.js"></script>
+</body>
+</html>
